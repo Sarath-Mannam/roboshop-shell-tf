@@ -75,7 +75,7 @@ npm install  &>>$LOGFILE
 VALIDATE $? "Installing npm dependencies"
 
 #give full path of catalogue.service because we are inside /app
-cp /home/centos/Roboshop-Shell/catalogue.service /etc/systemd/system/catalogue.service  &>>$LOGFILE
+cp /home/centos/roboshop-shell-tf-tf/catalogue.service /etc/systemd/system/catalogue.service  &>>$LOGFILE
 
 VALIDATE $? "Copying catalogue.service"
 
@@ -91,7 +91,7 @@ systemctl start catalogue  &>>$LOGFILE
 
 VALIDATE $? "Starting Catalogue"
 
-cp /home/centos/Roboshop-Shell/mongo.repo /etc/yum.repos.d/mongo.repo  &>>$LOGFILE
+cp /home/centos/roboshop-shell-tf/mongo.repo /etc/yum.repos.d/mongo.repo  &>>$LOGFILE
 
 VALIDATE $? "Copying mongo repo"
 

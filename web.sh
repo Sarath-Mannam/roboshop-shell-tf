@@ -55,7 +55,7 @@ unzip /tmp/web.zip &>>$LOGFILE
 VALIDATE $? "Unzipping web artifact"
 
 # We need to create a roboshop.conf file
-cp /home/centos/Roboshop-Shell/roboshop.conf /etc/nginx/default.d/roboshop.conf &>>$LOGFILE
+cp /home/centos/roboshop-shell-tf/roboshop.conf /etc/nginx/default.d/roboshop.conf &>>$LOGFILE
 
 VALIDATE $? "Copying roboshop config"
 

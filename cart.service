@@ -2,9 +2,9 @@
 Description = Cart Service
 [Service]
 User=roboshop
-Environment=REDIS_HOST=redis.sarathmannam.online 
-Environment=CATALOGUE_HOST=catalogue.sarathmannam.online
-Environment=CATALOGUE_PORT=8080
+Environment=REDIS_HOST=redis.mannamsarath.online 
+Environment=CATALOGUE_HOST=catalogue.mannamsarath.online
+Environment=CATALOGUE_PORT=80
 ExecStart=/bin/node /app/server.js
 SyslogIdentifier=cart
 

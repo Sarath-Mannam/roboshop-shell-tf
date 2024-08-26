@@ -75,7 +75,7 @@ npm install  &>>$LOGFILE
 VALIDATE $? "Installing npm dependencies"
 
 #give full path of user.service because we are inside /app
-cp /home/centos/Roboshop-Shell/user.service /etc/systemd/system/user.service  &>>$LOGFILE
+cp /home/centos/roboshop-shell-tf/user.service /etc/systemd/system/user.service  &>>$LOGFILE
 
 VALIDATE $? "Copying user.service"
 
@@ -91,7 +91,7 @@ systemctl start user  &>>$LOGFILE
 
 VALIDATE $? "Starting user"
 
-cp /home/centos/Roboshop-Shell/mongo.repo /etc/yum.repos.d/mongo.repo  &>>$LOGFILE
+cp /home/centos/roboshop-shell-tf/mongo.repo /etc/yum.repos.d/mongo.repo  &>>$LOGFILE
 
 VALIDATE $? "Copying mongo repo"
 
@@ -99,7 +99,7 @@ yum install mongodb-org-shell -y  &>>$LOGFILE
 
 VALIDATE $? "Installing mongo client"
 
-mongo --host mongodb.sarathmannam.online </app/schema/user.js  &>>$LOGFILE
+mongo --host mongodb.mannamsarath.online </app/schema/user.js  &>>$LOGFILE
 
 VALIDATE $? "Loading user data into mongodb server"
 

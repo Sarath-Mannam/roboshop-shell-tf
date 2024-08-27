@@ -42,7 +42,7 @@ cd /app &>>$LOGFILE
 
 VALIDATE $? "Moving to app directory"
 
-unzip /tmp/payment.zip 
+unzip /tmp/payment.zip &>>$LOGFILE
 
 VALIDATE $? "unzipping artifact"
 
